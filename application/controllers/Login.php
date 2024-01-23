@@ -41,7 +41,7 @@ class Login extends CI_Controller
                     redirect('admin/menu');
                 } else if ($user['role'] == 'sekretaris') {
                     $this->_updateLastLogin($userid);
-                    redirect('surat');
+                    redirect('sekretaris/menu');
                 }
             } else {
                 //jika password salah
